@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a7719c3.css",
+    "main.js": "/static/js/main.e67de97a.js",
+    "static/media/error-todo-bg.png": "/static/media/error-todo-bg.775fc1b5c3ed57c0ee31.png",
+    "static/media/create-todo-bg.png": "/static/media/create-todo-bg.275d316dca221e457eda.png",
+    "index.html": "/index.html",
+    "main.3a7719c3.css.map": "/static/css/main.3a7719c3.css.map",
+    "main.e67de97a.js.map": "/static/js/main.e67de97a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a7719c3.css",
+    "static/js/main.e67de97a.js"
+  ]
+}
