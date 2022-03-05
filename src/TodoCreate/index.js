@@ -8,7 +8,7 @@ function TodoCreate () {
     return (
         <div className="todo-create">
             <img className="todo-create__image" src={image} alt="create new todo"/>
-            <p sclassName="todo-create__text"> 
+            <p className="todo-create__text"> 
                 Click
                 <span className="todo-create__btn">            
                     <FontAwesomeIcon icon={faPlus} />
