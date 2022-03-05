@@ -44,5 +44,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   }, 
-  "honepage": "https://JoalbertMilano.github.io/todo-app"
+  "homepage": "https://joalbertmilano.github.io/todo-app"
 }
