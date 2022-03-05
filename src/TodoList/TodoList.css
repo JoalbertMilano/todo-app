@@ -1,0 +1,17 @@
+.todo-list {
+    min-width: 320px;
+    height: 100%;
+}
+
+.todo-list__items {
+    position: relative;
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 24px;
+    margin: auto;
+    width: 90%;
+    max-width: 768px;
+    height: 100%;
+    min-width: 288px;
+    list-style: none;
+}

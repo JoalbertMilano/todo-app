@@ -1,0 +1,48 @@
+.todo-counter {
+    padding: 8px 0;
+    min-width: 320px;
+    text-align: center;
+}
+
+.todo-counter__title {
+    margin-bottom: 8px;
+}
+
+.todo-counter__count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #6C757D;
+    border-radius: 5px;
+    margin: 8px auto;
+    width: min-content;
+    box-shadow: #212529 3px 3px;
+    overflow: hidden;
+}
+
+.todo-counter__number {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+}
+
+.todo-counter__number--actual {
+    background-color: #70E000;
+}
+
+.todo-counter__number--objective {
+    background-color: #E9ECEF;
+}
+
+.todo-counter__of {
+    position: absolute;
+}
+
+.todo-counter__todos {
+    font-size: 18px;
+    font-weight: 700;
+}

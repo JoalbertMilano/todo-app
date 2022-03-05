@@ -1,0 +1,60 @@
+.todo-form {
+    width: 70%;
+    min-width: 225px;
+    max-width: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: #212529 3px 3px;
+}
+
+.todo-form__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.todo-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.todo-form__textarea {
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    font-size: 16px;
+    
+}
+.todo-form-buttons__btn {
+    border: none;
+    width: 60px;
+    height: 36px;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+
+.todo-form-buttons__btn--add {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #70E000;
+    box-shadow: #212529 3px 3px;
+}
+
+.todo-form-buttons__btn--cancel {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #E9ECEF;
+    box-shadow: #212529 3px 3px;
+}
+
