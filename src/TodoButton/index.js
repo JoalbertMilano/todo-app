@@ -7,7 +7,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 function TodoButton () {
     const { setOpenModal } = useContext(TodoContext);
     const onClickButton = () => {
-        setOpenModal(state => !state);
+        setOpenModal(state => ({...state, adding: true}));
     }
 
     return (

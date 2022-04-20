@@ -12,7 +12,7 @@ import { TodoCreate } from '../TodoCreate';
 import { TodoError } from '../TodoError';
 
 function AppUI() {
-    const {loading, error, searchTodos, searchValue, completeTodo, deleteTodo, openModal} = useContext(TodoContext);
+    const {addTodo, loading, error, searchTodos, searchValue, completeTodo, editTodo, openEditTodo, deleteTodo, openModal, setOpenModal} = useContext(TodoContext);
     return (
         <React.Fragment>
             <TodoCounter />
@@ -43,16 +43,44 @@ function AppUI() {
                         text={todo.text} 
                         completed={todo.completed} 
                         onComplete={() => completeTodo(todo.text)}
+                        onEdit={() => openEditTodo(todo.text)}
                         onDelete={() => deleteTodo(todo.text)}
                         />
                     )) 
                 }
             </TodoList>
                 {
-                    openModal &&
+                    openModal.adding ?
                         <Modal>
-                            <TodoForm />
+                            <TodoForm
+                                type='Add'
+                                onSubmit={(event, newTodoValue) => {
+                                    event.preventDefault();
+                                    addTodo(newTodoValue);
+                                    setOpenModal(state => ({...state, adding: false}));
+                                }}
+                                onCancel={() => {
+                                    setOpenModal(state => ({...state, adding: false}));
+                                }}
+                            />
                         </Modal>
+                    : 
+                    openModal.editing ?
+                        <Modal>
+                            <TodoForm
+                                type='Edit'
+                                onSubmit={(event, newTodoValue) => {
+                                    event.preventDefault();
+                                    editTodo(newTodoValue);
+                                    setOpenModal(state => ({...state, editing: false}));
+                                }}
+                                onCancel={() => {
+                                    setOpenModal(state => ({...state, editing: false}));
+                                }}
+                                initialInput={openModal.editing}
+                            />
+                        </Modal>
+                    : null
                 }
             <TodoButton />
         </React.Fragment>
